@@ -3,15 +3,15 @@ const router = express.Router();
 const gravatar = require('gravatar');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
-const passport = require('passport');
+const jwtAuth = require('../../middleware/jwtAuth');
 const User = require('../../models/User');
 const keys = require('../../config/keys');
 
 // @route  GET api/users/me
 // @desc Return current user
 // @access Private
-router.get('/me', passport.authenticate('jwt', { session: false }), (req, res) => {
-    res.json({ id: req.user.id, name: req.user.name, email: req.user.email, avatar: req.user.avatar })
+router.get('/me', jwtAuth, (req, res) => {
+    res.send(req.user);
 });
 
 // @route  POST api/users/register

@@ -20,7 +20,7 @@ mongoose.connect(db, { useUnifiedTopology: true, useNewUrlParser: true }).then((
 //passport middleware
 app.use(passport.initialize());
 //passport config
-require('./config/passport')(passport);
+require('./middleware/passport')(passport);
 
 //user routes
 app.use('/api/users', users);
