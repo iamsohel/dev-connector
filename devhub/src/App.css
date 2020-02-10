@@ -1,5 +1,8 @@
+
+
 .App {
   text-align: center;
+  min-height: 100%;
 }
 
 .App-logo {
@@ -25,7 +28,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #ffc740;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +38,49 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* .footer {
+  height: 80px;
+  margin-top: -50px;
+} */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.bg-dark {
+  background-color: #ffc740!important;
+}
+.navbar-dark .navbar-brand {
+  color: #2a2a2a;
+}
+.text-white {
+  color: #2a2a2a!important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #2a2a2a;
+}
+.btn-info {
+  color: #2a2a2a;
+  background-color: #ffc740;
+  border-color: #ffc740;
+}
+.btn-info:hover{
+  color: #fff;
+  background-color: #ffc740;
+  border-color: #ffc740;
+}
+.btn-info:active{
+  color: #fff;
+  background-color: #ffc740;
+  border-color: #ffc740;
+}
+.btn-info:focus{
+  color: #fff;
+  background-color: #ffc740;
+  border-color: #ffc740;
 }
