@@ -7,7 +7,8 @@ const apiEndpoint = "/users/register";
 
 export async function login(user) {
   const { data } = await http.post('/users/login', user);
-  localStorage.setItem(tokenKey, data.token);
+  localStorage.setItem(tokenKey, data);
+  //setAuthToken(data);
   return data;
 }
 

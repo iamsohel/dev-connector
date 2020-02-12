@@ -1,7 +1,7 @@
 import axios from "axios";
 import logger from "./logService";
 //import { toast } from "react-toastify";
-import auth from "./authService";
+
 
 axios.defaults.baseURL = 'http://localhost:5000/api';
 
