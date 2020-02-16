@@ -83,3 +83,14 @@
   background-color: #ffc740;
   border-color: #ffc740;
 }
+.text-info {
+  color: #ffc740!important;
+}
+
+.btn-light {
+  margin-right: 10px;
+}
+
+.bg-info {
+  background-color: #ffc740!important;
+}
