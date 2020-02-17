@@ -17,6 +17,7 @@ import AddEducation from './components/add-education/AddEducation';
 import Profiles from './components/profiles/Profiles';
 import Profile from './components/profile/Profile';
 import Posts from './components/posts/Posts';
+import Post from './components/post/Post';
 import NotFound from './components/not-found/NotFound';
 
 setTokenAlwaysToHeader();
@@ -40,6 +41,7 @@ function App() {
               <PrivateRoute exact path="/add-experience" component={AddExperience} />
               <PrivateRoute exact path="/add-education" component={AddEducation} />
               <PrivateRoute exact path="/feed" component={Posts} />
+              <PrivateRoute exact path="/post/:id" component={Post} />
             </Switch>
             <Route exact path="/not-found" component={NotFound} />
             </div>

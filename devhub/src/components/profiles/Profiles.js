@@ -5,6 +5,7 @@ import ProfileItem from './ProfileItem';
 import { getProfiles } from '../../redux/actions/profileActions';
 
 class Profiles extends Component {
+    
   componentDidMount() {
     this.props.getProfiles();
   }

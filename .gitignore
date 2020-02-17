@@ -1,3 +1,4 @@
 /node_modules
 package-lock.json
 /devhub/node_modules
+/config/keys_dev.js
